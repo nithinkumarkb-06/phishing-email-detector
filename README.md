@@ -123,7 +123,13 @@ After training the model, run:
 python phishing_detector.py
 ```
 
-Paste an email when prompted:
+Paste an email when prompted, then finish with Ctrl+Z and Enter on Windows or Ctrl+D on macOS/Linux.
+
+Alternatively, analyze an email from a file:
+
+```bash
+python phishing_detector.py --file email.txt
+```
 
 ```text
 URGENT!
@@ -154,6 +160,12 @@ Indicators
 ✓ Multiple phishing indicators found
 --------------------------------------------------
 ```
+
+---
+
+## Git Large File Warning
+
+This repository includes large dataset files such as `CEAS_08.csv` that exceed GitHub's recommended file size limit (50 MB). Consider using Git LFS for large datasets or storing them externally to keep the repo manageable.
 
 ---
 
